@@ -172,3 +172,6 @@ body.light { background: var(--page); }
 }
 .grid > * { min-width: 0; }
 @media (max-width: 640px) { .when { width: 92px !important; } }
+/* iOS Safari gives date/time inputs a fixed native width that ignores width:100%, so they spill out of narrow cards. */
+input[type="date"], input[type="time"] { -webkit-appearance: none; appearance: none; display: block; min-width: 0; max-width: 100%; min-height: 44px; }
+input[type="date"]::-webkit-date-and-time-value, input[type="time"]::-webkit-date-and-time-value { text-align: left; }
