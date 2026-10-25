@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a session · Studio CRM demo</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="assets/style.css"></head>
+<body class="public"><div class="demo-bar">Demo with made-up data<span class="long">. Click around: nothing is saved</span>. <a href="book.html">Client booking page</a> · <a href="band.html">Private band page</a></div>
+<main class="book"><aside><div><img src="assets/logo.png" alt="Quiethouse Recording"><p class="kicker" style="color:#c2c8cc">Book a session</p><h1>Quiethouse Recording</h1>
+<p style="margin-top:12px;font-size:15px;color:#d1d5db">Pick a day and tell us what you're working on. We'll confirm availability and send the details.</p></div>
+<ol class="steps"><li><span>1</span><div><p style="font-size:14px">Tell us about your project</p><p style="font-size:14px;color:#9ca3af;margin-top:2px">Pick the service you need and a day that works.</p></div></li><li><span>2</span><div><p style="font-size:14px">We check the calendar</p><p style="font-size:14px;color:#9ca3af;margin-top:2px">We'll confirm the day and set the session times with you.</p></div></li><li><span>3</span><div><p style="font-size:14px">You get the details</p><p style="font-size:14px;color:#9ca3af;margin-top:2px">Everything you need lands in your inbox.</p></div></li></ol><div class="contact" style="margin-top:auto;border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:14px;color:#9ca3af">Brooklyn, NY<br>hello@quiet.house</div></aside>
+<section><form data-done="thanks">
+<p class="fh">About you</p><div class="grid g2" style="gap:0 16px">
+<div class="f"><label>First name</label><input class="input" required placeholder="Sam"></div><div class="f"><label>Last name</label><input class="input" required placeholder="Rivera"></div>
+<div class="f"><label>Email</label><input class="input" type="email" required placeholder="you@example.com"></div><div class="f"><label>Phone number <em>Optional</em></label><input class="input" type="tel"></div></div>
+<p class="fh" style="margin-top:16px">Your project</p>
+<div class="f"><label>Artist / band / project name</label><input class="input" required placeholder="Low Tide"></div>
+<div class="f"><label>Instagram / social media link</label><input class="input" required placeholder="@yourband"></div>
+<div class="grid g2" style="gap:0 16px"><div class="f"><label>Service requested</label><select class="input"><option>Recording/Tracking</option><option>Mixing</option><option>Mastering</option><option>Consult</option></select></div>
+<div class="f"><label>Preferred days</label><div id="days" style="display:grid;gap:8px"><input class="input" type="date" required value="2026-11-18"></div>
+<a href="#" data-add-day class="small" style="display:inline-block;margin-top:8px">+ Add another day</a></div></div>
+<div class="f"><label>Message</label><textarea class="input" rows="4" placeholder="What are you working on?"></textarea></div>
+<button class="btn" style="width:100%;justify-content:center;padding:12px;margin-top:8px">Request this session</button>
+<p class="small muted" style="text-align:center;margin-top:12px">No payment now. We'll confirm before anything is booked.</p></form>
+<div id="thanks" hidden style="text-align:center;padding:40px 0"><h2 style="font-size:30px">Request sent</h2><p class="muted" style="margin-top:10px">Thanks! We'll check the calendar and email you to confirm.<br>(This is the demo: nothing was sent.)</p>
+<a class="btn sec" style="margin-top:20px" href="bookings.html">See it in the CRM →</a></div></section></main><script src="assets/app.js"></script></body></html>
